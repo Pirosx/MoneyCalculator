@@ -3,11 +3,10 @@ package mainmoneycalculator;
 import java.util.HashSet;
 
 public class CurrencySet extends HashSet {
-    private HashSet<Currency> currencies;
-    private boolean instance = false;
+    private HashSet<Currency> currencies = new HashSet<>();
+    private static CurrencySet instance = null;
     
-    public CurrencySet (){
-        currencies = new HashSet<>();
+    private CurrencySet (){
     }
     
     public void addCurrency (Currency currency){
@@ -22,12 +21,11 @@ public class CurrencySet extends HashSet {
         return null;
     }
     
-  /*  public boolean getIntance(){
-        if (!instance){
-            instance = true;
-            return false;
+    public static CurrencySet getIntance(){
+        if (instance == null){
+            instance = new CurrencySet();
         }
         return instance;
-    }*/
+    }
     
 }

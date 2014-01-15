@@ -5,7 +5,7 @@ public class Number {
     private double num;
     private double denominador;
 
-    public Number(long num, long denominador) {
+    public Number(long num, double denominador) {
         this.num = num;
         this.denominador = denominador;
     }

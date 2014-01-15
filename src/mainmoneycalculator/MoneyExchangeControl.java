@@ -1,5 +1,7 @@
 package mainmoneycalculator;
 
-public abstract class MoneyExchangeControl {
-    public abstract void execute();
+public class MoneyExchangeControl {
+    
+    public void execute(){
+    }
 }

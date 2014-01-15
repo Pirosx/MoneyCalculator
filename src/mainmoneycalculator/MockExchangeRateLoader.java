@@ -2,7 +2,7 @@ package mainmoneycalculator;
 
 import java.util.Date;
 
-public class MockExchangeRateLoader extends ExchangeRateLoader {
+public class MockExchangeRateLoader implements ExchangeRateLoader {
     private ExchangeRate exchangeRate;
 
     @Override
